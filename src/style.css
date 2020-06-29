@@ -1,0 +1,155 @@
+/* general */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./bg/Canvas.png);
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.inner {
+  position: relative;
+}
+
+/* modal */
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: blueviolet;
+  color: white;
+}
+
+.modal:empty {
+  display: none;
+}
+
+.modal-inner {
+  background-color: blueviolet;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.modal-inner:empty {
+  display: none;
+}
+
+/* frame */
+
+.frame {
+  background-image: url(./bg/FRAME.png);
+  height: 762px;
+  width: 762px;
+  position: relative;
+}
+
+/* icons */
+
+.icons {
+  position: absolute;
+  top: 572px;
+  left: 194px;
+  height: 67px;
+  width: 374px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  background-color: transparent;
+  background-image: url(bg/ICONS/NotSelected.png);
+  background-repeat: no-repeat;
+  border-color: transparent;
+  height: 65px;
+  overflow: hidden;
+  width: 56px;
+}
+
+.icon.fish-icon {
+  background-position: 0px 0px;
+}
+
+.icon.poop-icon {
+  background-position: -162px 0px;
+}
+
+.icon.weather-icon {
+  background-position: -323px 0px;
+}
+
+.icon.highlighted {
+  background-image: url(bg/ICONS/Hover.png);
+}
+
+.icon.active {
+  background-image: url(bg/ICONS/Selected.png);
+}
+
+/* buttons */
+
+.buttons {
+  position: absolute;
+  top: 674px;
+  left: 266px;
+  height: 71px;
+  width: 228px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: transparent;
+  background-image: url(bg/BUTTONS/NotSelected.png);
+  background-repeat: no-repeat;
+  border-color: transparent;
+  cursor: pointer;
+  height: 65px;
+  overflow: hidden;
+  width: 62px;
+}
+
+.btn.left-btn {
+  background-position: 0px 0px;
+}
+
+.btn.middle-btn {
+  background-position: -84px 0px;
+}
+
+.btn.right-btn {
+  background-position: -167px 0px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-image: url(bg/BUTTONS/Hover.png);
+}
+
+.btn:active {
+  background-image: url(bg/BUTTONS/Selected.png);
+}
