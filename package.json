@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
     "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\"",
